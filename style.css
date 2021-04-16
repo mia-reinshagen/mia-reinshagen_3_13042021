@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  #bloc_page {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    color: #181818;
+  }
+  
+  /* header */
+
+#header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: black 10px;
+}
+
+#bloc_location
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: grey;
+    width: 100%;
+}
+
+#calltoaction
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#calltoaction h2
+{
+padding-top: 30px;
+padding-bottom: 10px;
+}
+
+#calltoaction a
+{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(#FF79DA, #9356DC);
+     
+    border-radius: 40px;
+    padding: 20px;
+}
+
+#logo
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* fonctionnement */
+
+.fonctionnement_design
+{
+    background-color: lightgray;
+    border-radius: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.fonctionnement_design a
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:20px;
+
+}
+
+.fonctionnement_design .icon
+{
+    padding-left: 60px;
+}
+
+/* footer */
+
+#footer
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top:20px;
+background-color: grey;
+padding-bottom:30px;
+
+}
+
+#logo_footer
+{
+    padding-bottom: 10px;
+}
+
+.footer_symbole
+{
+    padding-top:5px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_sans_symbole
+{
+    padding-top:5px;
+    display: flex;
+    align-items: center;
+}
+
+#footer .icon
+{
+padding-right: 8px;
+}
+
+#footer p
+{
+color: white;
+}
+
+
+
