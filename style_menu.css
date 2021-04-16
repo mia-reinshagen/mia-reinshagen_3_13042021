@@ -1,0 +1,222 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  #bloc_page {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+    font-family: "Roboto", sans-serif;
+    color: #181818;
+  }
+
+/* header */
+
+#header
+{
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+#logo
+{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon_back
+{
+    display: flex;
+    flex-direction: flex;
+    justify-content: left;
+
+}
+
+#header_image img
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* article */
+
+#article_menu
+{
+    border-radius: 35px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #f6f6f6;
+}
+
+#titre_article
+{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#titre_article i
+{
+    padding-right: 20px;
+}
+
+#titre_article h2
+{
+    font-family: "Shrikhand", sans-serif;
+}
+
+#menu_choix
+{
+    padding-top:30px;
+
+}
+
+.titre_choix
+{
+    border-bottom: 3px solid #99E2D0;
+    padding-bottom: 5px;
+    border-width: 3px;
+
+}
+
+.choix
+{
+    background-color: white;
+    border-radius: 13px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left:10px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 3px black;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top:20px;
+    display:flex;
+    flex-direction: flex;
+    justify-content: space-between;
+}
+
+.text_choix
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.text_choix strong
+{
+    padding-bottom: 6px;
+}
+
+.text_choix span 
+{
+    font-size: 14px;
+}
+
+.prix 
+{
+    padding-right: 10px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: flex;
+}
+
+#bouton_commander
+{
+    display: flex;
+    justify-content: center;
+
+}
+
+#bouton_commander a
+
+{
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    box-shadow: 0 0 7px black;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 40px;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 30px;
+}
+
+
+
+
+
+/* footer */
+
+#footer
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top:20px;
+    background-color: #353535;
+    padding-bottom:30px;
+
+}
+
+#logo_footer
+{
+    padding-bottom: 10px;
+}
+
+#logo_footer img
+{
+    height: 20px;
+}
+
+.footer_symbole
+{
+    padding-top:5px;
+    display: flex;
+    align-items: center;
+}
+
+.footer_sans_symbole
+{
+    padding-top:5px;
+    display: flex;
+    align-items: center;
+}
+
+#footer .icon
+{
+padding-right: 8px;
+}
+
+#footer p
+{
+color: white;
+}
+
