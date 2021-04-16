@@ -29,7 +29,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: black 10px;
+}
+
+#logo
+{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 #bloc_location
@@ -39,16 +46,34 @@
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: grey;
+    background-color: #eaeaea;
     width: 100%;
+    border-top: 3px solid black;
+  
+}
+
+#icon_location
+{
+    padding-right: 10px;
+}
+
+#text_location input
+{
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 #calltoaction
 {
+    background-color: #f6f6f6;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 #calltoaction h2
@@ -63,27 +88,45 @@ padding-bottom: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     background: linear-gradient(#FF79DA, #9356DC);
-     
+    box-shadow: 0 0 7px black;
+    box-sizing: border-box;
+    overflow: hidden;
     border-radius: 40px;
     padding: 20px;
+    margin-top: 30px;
 }
 
-#logo
-{
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+
 
 /* fonctionnement */
 
+#choix
+{
+    margin-top:40px;
+}
+
+#fonctionnement
+{
+margin-bottom: 4px;
+}
+#fonctionnement_bulle
+{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+
 .fonctionnement_design
 {
-    background-color: lightgray;
+    background-color: #f6f6f6;
     border-radius: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
     margin-bottom: 20px;
     margin-top: 20px;
+    box-shadow: 0 0 8px black;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .fonctionnement_design a
@@ -92,12 +135,149 @@ padding-bottom: 10px;
     align-items: center;
     justify-content: center;
     padding-bottom:20px;
-
+    font-weight: bold;
+    
 }
 
 .fonctionnement_design .icon
 {
     padding-left: 60px;
+}
+
+.fonctionnement_design .symbole
+{
+    position: relative;
+    display: flex;
+    flex-direction: flex;
+}
+
+.fonctionnement_design:hover
+{
+    background-color: #f4edfd;
+}
+
+.symbole
+{
+    display: flex;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #9356DC;
+    position: absolute;
+
+}
+
+.symbole p
+{
+    color:white;
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 8px;
+}
+
+#choix .fa-list-ul:hover
+{
+    background-color: #9356DC;
+}
+
+/*restaurant */
+
+#Restaurants
+{
+    background-color:#f6f6f6;
+}
+
+.restaurant_tab img
+{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.restaurant_tab
+{
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    border-radius: 15px;
+    box-shadow: 0 0 7px black;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 30px;
+
+
+}
+
+#Restaurants h2
+{
+padding-top: 60px;
+}
+
+#image_restaurant
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.nouveau
+{
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    background-color: #99E2D0;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 15px;
+}
+
+.nouveau p
+{
+    display: flex;
+    flex-direction: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #49947a;
+
+    
+}
+
+
+.description_image
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description_text
+{
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description_text span
+{
+    padding-top:3px;
+}
+
+.icon
+{
+    padding-right:20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: flex;
+}
+
+.fa-heart:hover
+{
+    background: linear-gradient(#FF79DA, #9356DC);
 }
 
 /* footer */
@@ -108,14 +288,19 @@ padding-bottom: 10px;
     flex-direction: column;
     padding-left: 20px;
     padding-top:20px;
-background-color: grey;
-padding-bottom:30px;
+    background-color: #353535;
+    padding-bottom:30px;
 
 }
 
 #logo_footer
 {
     padding-bottom: 10px;
+}
+
+#logo_footer img
+{
+    height: 20px;
 }
 
 .footer_symbole
