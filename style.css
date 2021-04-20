@@ -8,12 +8,7 @@
     font-size: 16px;
   }
   
-  #bloc_page {
-    width: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-sizing: border-box;
-  }
+
   
   body {
     background-color: white;
@@ -37,6 +32,7 @@
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 20px;
+    box-shadow: 3px black;
 }
 
 #bloc_location
@@ -48,7 +44,8 @@
     padding-bottom: 20px;
     background-color: #eaeaea;
     width: 100%;
-    border-top: 3px solid black;
+    box-shadow: top 30px black;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 5px 0px inset;
   
 }
 
@@ -107,7 +104,7 @@ padding-bottom: 10px;
 
 #fonctionnement
 {
-margin-bottom: 4px;
+    margin-bottom: 4px;
 }
 #fonctionnement_bulle
 {
@@ -280,6 +277,12 @@ padding-top: 60px;
     background: linear-gradient(#FF79DA, #9356DC);
 }
 
+.icon i 
+{
+    font-size: 18px; 
+    color: grey;
+
+}
 /* footer */
 
 #footer

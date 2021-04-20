@@ -8,12 +8,6 @@
     font-size: 16px;
   }
   
-  #bloc_page {
-    width: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-sizing: border-box;
-  }
   
   body {
     background-color: white;
@@ -25,29 +19,22 @@
 
 #header
 {
-    display: flex;
-    flex-direction: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-
+    height: 70px;
 }
 
 #logo
 {
-    padding-top: 30px;
-    padding-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #icon_back
-{
-    display: flex;
-    flex-direction: flex;
-    justify-content: left;
 
+{
+   position: relative;
+   top:27px;
+   left:30px;
 }
 
 #header_image img
@@ -60,6 +47,12 @@
 
 /* article */
 
+#section_menu
+{
+    z-index: 100;
+
+}
+
 #article_menu
 {
     border-radius: 35px;
@@ -70,6 +63,8 @@
     box-sizing: border-box;
     overflow: hidden;
     background-color: #f6f6f6;
+    position: relative;
+    top: -35px;
 }
 
 #titre_article
@@ -101,6 +96,7 @@
     border-bottom: 3px solid #99E2D0;
     padding-bottom: 5px;
     border-width: 3px;
+    width: 40px;
 
 }
 
