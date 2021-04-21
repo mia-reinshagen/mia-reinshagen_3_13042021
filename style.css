@@ -26,7 +26,7 @@
     justify-content: center;
 }
 
-#logo
+#header_logo
 {
     display: flex;
     justify-content: center;
@@ -35,7 +35,7 @@
     box-shadow: 3px black;
 }
 
-#bloc_location
+#header_location
 {
     display: flex;
     justify-content: center;
@@ -49,12 +49,12 @@
   
 }
 
-#icon_location
+#header_location_icon
 {
     padding-right: 10px;
 }
 
-#text_location input
+#header_location_text
 {
     background: none;
     border: none;
@@ -62,7 +62,7 @@
     font-size: 13px;
 }
 
-#calltoaction
+#header_calltoaction
 {
     background-color: #f6f6f6;
     width: 100%;
@@ -73,19 +73,19 @@
     padding-bottom: 30px;
 }
 
-#calltoaction h2
+#header_calltoaction h2
 {
 padding-top: 30px;
 padding-bottom: 10px;
 }
 
-#calltoaction a
+#header_calltoaction a /* bouton */
 {
     color: white;
     margin-top: 20px;
     margin-bottom: 20px;
     background: linear-gradient(#FF79DA, #9356DC);
-    box-shadow: 0 0 7px black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 40px;
@@ -97,74 +97,48 @@ padding-bottom: 10px;
 
 /* fonctionnement */
 
-#choix
-{
-    margin-top:40px;
-}
-
 #fonctionnement
 {
-    margin-bottom: 4px;
+    margin-bottom:40px;
+    margin-top:40px;
+;
 }
-#fonctionnement_bulle
+
+#fonctionnement .fa-list-ul:hover
 {
+    background-color: #9356DC;
+}
+
+#fonctionnement_titre
+{
+    margin-left:25px;
+    margin-right:25px;
+}
+
+#fonctionnement_contenu
+{
+    margin-left:25px;
+    margin-right:25px;
+    margin-bottom: 30px;
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
-
-.fonctionnement_design
-{
-    background-color: #f6f6f6;
-    border-radius: 20px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    box-shadow: 0 0 8px black;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.fonctionnement_design a
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom:20px;
-    font-weight: bold;
-    
-}
-
-.fonctionnement_design .icon
-{
-    padding-left: 60px;
-}
-
-.fonctionnement_design .symbole
-{
-    position: relative;
-    display: flex;
-    flex-direction: flex;
-}
-
-.fonctionnement_design:hover
-{
-    background-color: #f4edfd;
-}
-
-.symbole
+.fonctionnement_contenu_chiffre
 {
     display: flex;
     width: 25px;
     height: 25px;
     border-radius: 20px;
     background-color: #9356DC;
-    position: absolute;
-
+    position: relative;
+    display: flex;
+    align-items: center;
+    top:60px;
+    right:13px;
 }
 
-.symbole p
+.fonctionnement_contenu_chiffre p
 {
     color:white;
     display: flex;
@@ -174,65 +148,109 @@ padding-bottom: 10px;
     padding-left: 8px;
 }
 
-#choix .fa-list-ul:hover
+.fonctionnement_contenu_box
 {
-    background-color: #9356DC;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
-/*restaurant */
+.fonctionnement_contenu_box:hover
+{
+    background-color: #f4edfd;
+}
 
-#Restaurants
+.fonctionnement_contenu_box_icon 
+{
+    padding-left: 40px;
+    display: flex;
+    
+}
+
+.fonctionnement_contenu_box_icon i
+{
+    font-size: 23px; 
+    color: grey;
+}
+
+.fonctionnement_contenu_box a
+{
+  margin-left:30px;
+    font-weight: bold;
+}
+
+
+/*restaurant*/
+
+#restaurants
 {
     background-color:#f6f6f6;
 }
 
-.restaurant_tab img
+#restaurants_titre
 {
+    padding-top: 60px;
+    margin-left:25px;
+    margin-right:25px;
+}
+
+#restaurants_contenu
+{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    background-color:#f6f6f6;
+}
+
+.restaurant_contenu_box img
+{
+    display: flex;
+    flex-direction: flex;
     width: 100%;
     height: 140px;
     object-fit: cover;
 }
 
-.restaurant_tab
+.restaurant_contenu_box
 {
+    margin-left:25px;
+    margin-right:25px;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
     height: 210px;
     border-radius: 15px;
-    box-shadow: 0 0 7px black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     box-sizing: border-box;
     overflow: hidden;
     margin-top: 30px;
 
-
 }
 
-#Restaurants h2
+.restaurant_contenu_box_bouton
 {
-padding-top: 60px;
-}
-
-#image_restaurant
-{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 50px;
-}
-
-.nouveau
-{
-    display: flex;
-    flex-direction: flex;
-    justify-content: center;
     background-color: #99E2D0;
     width: 100px;
     height: 35px;
     border-radius: 5px;
     position: absolute;
-    margin-top: 15px;
+    margin-top:20px;
+    margin-right:15px;
+    margin-left:-15px;
+    padding:8px;
+    padding-left: 14px;
+    display: flex;
+    
 }
 
-.nouveau p
+.restaurant_contenu_box_bouton p
 {
     display: flex;
     flex-direction: flex;
@@ -240,49 +258,44 @@ padding-top: 60px;
     align-items: center;
     font-weight: bold;
     color: #49947a;
-
-    
 }
 
-
-.description_image
+.restaurant_contenu_box_description
 {
     display: flex;
     justify-content: space-between;
 }
 
-.description_text
+.restaurant_contenu_box_description_text
 {
     padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 16px;
     display: flex;
     flex-direction: column;
 }
 
-.description_text span
-{
-    padding-top:3px;
-}
-
-.icon
+.restaurant_contenu_box_description_icon
 {
     padding-right:20px;
-    padding-top: 10px;
+    padding-top: 14px;
     display: flex;
     flex-direction: flex;
 }
 
-.fa-heart:hover
+.fa-heart:hover + i.fas.fa-heart 
 {
-    background: linear-gradient(#FF79DA, #9356DC);
+    color: linear-gradient(#FF79DA, #9356DC);
 }
 
-.icon i 
+.restaurant_contenu_box_description_icon i
 {
-    font-size: 18px; 
+    padding-top:4px;
+    font-size: 25px; 
     color: grey;
 
 }
+
+
 /* footer */
 
 #footer
@@ -293,42 +306,40 @@ padding-top: 60px;
     padding-top:20px;
     background-color: #353535;
     padding-bottom:30px;
-
 }
 
-#logo_footer
+#footer_logo
 {
     padding-bottom: 10px;
 }
 
-#logo_footer img
+#footer_logo img
 {
     height: 20px;
 }
 
-.footer_symbole
-{
-    padding-top:5px;
-    display: flex;
-    align-items: center;
-}
-
-.footer_sans_symbole
-{
-    padding-top:5px;
-    display: flex;
-    align-items: center;
-}
-
-#footer .icon
-{
-padding-right: 8px;
-}
-
-#footer p
+#footer_info p
 {
 color: white;
 }
 
+.footer_text_avec_icon
+{
+    padding-top:5px;
+    display: flex;
+    align-items: center;
+}
 
+.footer_info_icon
+{
+    font-size: 13px;
+    color: white;
+    padding-right: 8px;
+}
 
+.footer_text_sans_icon
+{
+    padding-top:5px;
+    display: flex;
+    align-items: center;
+}
