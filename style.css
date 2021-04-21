@@ -51,7 +51,8 @@
 
 #header_location_icon
 {
-    padding-right: 10px;
+    padding-right: 15px;
+    font-size: 20px;
 }
 
 #header_location_text
@@ -59,7 +60,7 @@
     background: none;
     border: none;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 18px;
 }
 
 #header_calltoaction
@@ -91,6 +92,7 @@ padding-bottom: 10px;
     border-radius: 40px;
     padding: 20px;
     margin-top: 30px;
+    text-decoration: none;
 }
 
 
@@ -171,8 +173,12 @@ padding-bottom: 10px;
 .fonctionnement_contenu_box_icon 
 {
     padding-left: 40px;
-    display: flex;
-    
+    display: flex;    
+}
+
+.fonctionnement_contenu_box_icon i:hover
+{
+    color: #9356DC;
 }
 
 .fonctionnement_contenu_box_icon i
@@ -234,6 +240,13 @@ padding-bottom: 10px;
 
 }
 
+.restaurant_contenu_box a
+{
+    text-decoration: none;
+    color: black;
+
+}
+
 .restaurant_contenu_box_bouton
 {
     background-color: #99E2D0;
@@ -282,9 +295,12 @@ padding-bottom: 10px;
     flex-direction: flex;
 }
 
-.fa-heart:hover + i.fas.fa-heart 
+
+.fa-heart:hover
 {
-    color: linear-gradient(#FF79DA, #9356DC);
+    background-image: linear-gradient(#FF79DA, #9356DC); 
+    background-image: "fas fa-heart";
+    
 }
 
 .restaurant_contenu_box_description_icon i
@@ -292,7 +308,6 @@ padding-bottom: 10px;
     padding-top:4px;
     font-size: 25px; 
     color: grey;
-
 }
 
 
@@ -310,7 +325,8 @@ padding-bottom: 10px;
 
 #footer_logo
 {
-    padding-bottom: 10px;
+    padding-top:10px;
+    padding-bottom: 15px;
 }
 
 #footer_logo img
