@@ -145,6 +145,10 @@
 .menu_choix_contenu_text span 
 {
     font-size: 14px;
+    font-weight: lighter;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
 }
 
 .menu_choix_contenu_prix 
@@ -228,8 +232,19 @@ color: white;
     align-items: center;
 }
 
+.footer_text_sans_icon a
+{
+    text-decoration: none;
+    color: white;
+
+}
 
 /* partie animation css */ 
+
+.menu_choix_contenu
+{
+    position: relative;
+}
 
 
 .check_box
@@ -238,8 +253,19 @@ color: white;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    position: absolute;
+    right:-5rem; /*position finale */
+    transition: all 1s ease;
 
 }
+
+.menu_choix_contenu:hover .check_box
+{
+    position: absolute;
+    right:0rem;
+
+}
+
 .check
 {
     width: 80px;
@@ -253,12 +279,9 @@ color: white;
     border-bottom-left-radius: 0px;
     box-sizing: border-box;
     overflow: hidden;
-    position: absolute;
 
-    animation-name: transform;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
 }
+
 
 .fa-check-circle
 {
@@ -266,7 +289,7 @@ color: white;
     font-size: 20px;
     animation-name: circle ;
     animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count:infinite;
 }
 
 @keyframes circle
@@ -274,9 +297,39 @@ color: white;
     100% {transform: rotate(360deg);}
 }
 
-@keyframes box
+.menu_choix_contenu_prix
 {
-    0% {transform: (-10%, 20%);}
+    position: absolute;
+    right: 40px;
+    transition: all 1s ease;
+}
+
+.menu_choix_contenu:hover .menu_choix_contenu_prix
+{
+    position: absolute;
+    right:6rem;
+}
+
+#menu_choix_entree
+{
+    animation: fadein 2s ease-out;
+}
+
+#menu_choix_plats
+{
+    animation: fadein 2.5s ease-out;
+}
+
+#menu_choix_dessert
+{
+    animation: fadein 3s ease-out;
+}
+
+@keyframes fadein 
+
+{
+    from { opacity: 0; transform:translate(0%,-20%);}
+    to   { opacity: 1; }
 }
 
 
