@@ -83,7 +83,7 @@
     justify-content: space-between;
 }
 
-#menu_contenu_titre i
+#menu_contenu_titre #heart
 {
     margin-left:25px;
     padding-right: 20px;
@@ -91,6 +91,43 @@
     color:grey
 }
 
+:root{
+    --primary-color:#9356DC;
+    --secondary-color:#FF79DA;
+    }
+    
+     #heart>.far.fa-heart{
+            font-size: 28px;
+            cursor: pointer;
+            transition: color 150ms 50ms ease;
+            z-index: -99;
+     }
+    
+    
+    #heart .fas.fa-heart{
+            background: linear-gradient(170deg,var(--secondary-color),var(--primary-color));
+            font-size: 27.2px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transform: scale(0);
+            transition: transform 150ms 50ms ease-in-out;
+             position: relative;
+             left: -37px;
+    }
+    
+     #heart .far.fa-heart:hover{
+          color:transparent;
+      }
+    
+    #heart>.far.fa-heart:hover  .fas.fa-heart{
+    transform: scale(1);
+    }
+
+#heart
+{
+    margin-right:-30px;
+}
+    
 #menu_contenu_titre h2
 {
     font-family: "Shrikhand", sans-serif;
@@ -171,7 +208,7 @@
 {
     color: white;
     background: linear-gradient(#FF79DA, #9356DC);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     box-sizing: border-box;
     overflow: hidden;
     border-radius: 40px;
@@ -182,6 +219,11 @@
     text-decoration: none;
 }
 
+#bouton_commander a:hover
+{
+    opacity: 90%;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 5px -3px, rgba(0, 0, 0, 0.06) 0px 4px 6px -2px;
+}
 
 /* footer */
 
@@ -282,7 +324,6 @@ color: white;
 
 }
 
-
 .fa-check-circle
 {
     color: white;
@@ -294,6 +335,7 @@ color: white;
 
 @keyframes circle
 {
+    0% {transform: translate(360deg);}
     100% {transform: rotate(360deg);}
 }
 
