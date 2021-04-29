@@ -311,7 +311,7 @@ color: white;
 .check
 {
     width: 80px;
-    height: 66px;
+    height: 80px;
     background-color: aquamarine;
     display: flex;
     align-items: center;
@@ -321,6 +321,7 @@ color: white;
     border-bottom-left-radius: 0px;
     box-sizing: border-box;
     overflow: hidden;
+    padding-bottom:13px;
 
 }
 
@@ -328,15 +329,18 @@ color: white;
 {
     color: white;
     font-size: 20px;
-    animation-name: circle ;
-    animation-duration: 1s;
-    animation-iteration-count:infinite;
+
+}
+
+.menu_choix_contenu:hover .fa-check-circle
+{
+   animation: circle 1s 200ms ease-out forwards;
 }
 
 @keyframes circle
 {
-    0% {transform: translate(360deg);}
-    100% {transform: rotate(360deg);}
+    0% {transform: translate(0deg);}
+    100% {transform: rotate(1turn);}
 }
 
 .menu_choix_contenu_prix
