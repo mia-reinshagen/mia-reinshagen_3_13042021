@@ -164,6 +164,8 @@
     display:flex;
     flex-direction: flex;
     justify-content: space-between;
+    position: relative;
+
 }
 
 .menu_choix_contenu_text
@@ -172,6 +174,7 @@
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
+    text-overflow: ellipsis; 
 }
 
 .menu_choix_contenu_text strong
@@ -194,6 +197,130 @@
     display: flex;
     flex-direction: flex;
 }
+
+.menu_choix_contenu_text
+{
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+    padding-right: 80px;
+}
+
+.menu_anim .menu_choix_contenu_text
+{
+display: flex;
+flex-direction: flex;
+text-overflow: ellipsis; 
+white-space: nowrap; 
+overflow: hidden;
+
+}
+
+.menu_anim:hover
+{
+    padding-left: 30px;
+    margin-left:20px;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* partie animation css */ 
+
+
+.check_box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    right:-5rem; /*position finale */
+    transition: all 1s ease;
+
+}
+
+.menu_choix_contenu:hover .check_box
+{
+    
+    right:0rem;
+
+}
+
+.menu_choix_contenu:hover
+{
+    text-overflow: ellipsis;
+}
+
+.check
+{
+    width: 80px;
+    height: 80px;
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-bottom:13px;
+
+}
+
+.fa-check-circle
+{
+    color: white;
+    font-size: 20px;
+}
+
+.menu_choix_contenu:hover .fa-check-circle
+{
+   animation: circle 1s 200ms ease-out forwards; /* forwards = l'animation a lieu et après finit */
+}
+
+@keyframes circle
+{
+    0% {transform: translate(0deg);}
+    100% {transform: rotate(1turn);}
+}
+
+.menu_choix_contenu_prix
+{
+    position: absolute;
+    right: 40px;
+    transition: all 1s ease;
+}
+
+.menu_choix_contenu:hover .menu_choix_contenu_prix
+{
+    right:6rem;
+}
+
+#menu_choix_entree
+{
+    animation: fadein 2s 1s ease-out;
+}
+
+#menu_choix_plats
+{
+    animation: fadein 2s 1.5s ease-out;
+}
+
+#menu_choix_dessert
+{
+    animation: fadein 2s 2s ease-out;
+}
+
+@keyframes fadein 
+
+{
+    from { opacity: 0; transform:translate(0%,-10%);}
+    to   { opacity: 1; }
+}
+
+/* bouton_commander */
 
 #bouton_commander
 {
@@ -280,102 +407,3 @@ color: white;
     color: white;
 
 }
-
-/* partie animation css */ 
-
-.menu_choix_contenu
-{
-    position: relative;
-}
-
-
-.check_box
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    right:-5rem; /*position finale */
-    transition: all 1s ease;
-
-}
-
-.menu_choix_contenu:hover .check_box
-{
-    position: absolute;
-    right:0rem;
-
-}
-
-.check
-{
-    width: 80px;
-    height: 80px;
-    background-color: aquamarine;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 13px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    box-sizing: border-box;
-    overflow: hidden;
-    padding-bottom:13px;
-
-}
-
-.fa-check-circle
-{
-    color: white;
-    font-size: 20px;
-
-}
-
-.menu_choix_contenu:hover .fa-check-circle
-{
-   animation: circle 1s 200ms ease-out forwards;
-}
-
-@keyframes circle
-{
-    0% {transform: translate(0deg);}
-    100% {transform: rotate(1turn);}
-}
-
-.menu_choix_contenu_prix
-{
-    position: absolute;
-    right: 40px;
-    transition: all 1s ease;
-}
-
-.menu_choix_contenu:hover .menu_choix_contenu_prix
-{
-    position: absolute;
-    right:6rem;
-}
-
-#menu_choix_entree
-{
-    animation: fadein 2s ease-out;
-}
-
-#menu_choix_plats
-{
-    animation: fadein 2.5s ease-out;
-}
-
-#menu_choix_dessert
-{
-    animation: fadein 3s ease-out;
-}
-
-@keyframes fadein 
-
-{
-    from { opacity: 0; transform:translate(0%,-20%);}
-    to   { opacity: 1; }
-}
-
-
