@@ -180,6 +180,9 @@
 .menu_choix_contenu_text strong
 {
     padding-bottom: 6px;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .menu_choix_contenu_text span 
