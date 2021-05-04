@@ -407,3 +407,41 @@ color: white;
     color: white;
 
 }
+
+
+@media (min-width: 768px) /*tablette*/ 
+{
+    #menu_choix {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+.menu_choix_contenu{
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    flex:10%;
+
+}
+#menu_choix_entree
+    {
+        flex:10%;
+        flex-wrap: wrap;
+        padding-right: 30px;
+    }
+
+#menu_choix_plats
+{
+    flex:10%;
+    flex-wrap: wrap;
+    padding-right: 30px;
+}
+
+#menu_choix_dessert
+{
+    flex:10%;
+    flex-wrap: wrap;
+    padding-right: 30px; 
+}
+}

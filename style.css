@@ -449,10 +449,27 @@ padding-bottom: 10px;
 
 .restaurant_contenu_box{
     flex:40%;
-
-
 }
 
+#fonctionnement_contenu
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fonctionnement_contenu_box
+{
+    flex:10%;
+}
+
+
+.fonctionnement_contenu_chiffre
+{
+    top:40px;
+    right:-10px;
+}
+    
 }
 
 
@@ -468,8 +485,25 @@ padding-bottom: 10px;
     
     .restaurant_contenu_box{
         flex:10%;
-    
-    
+
     }
-    
+
+
+    #fonctionnement_contenu
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .fonctionnement_contenu_box
+    {
+        flex:10%;
+    }
+
+    .fonctionnement_contenu_chiffre
+{
+    top:33px;
+    right:-10px;
+}
     }
