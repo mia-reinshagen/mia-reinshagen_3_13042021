@@ -47,7 +47,7 @@
   {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed; /*pour que le loader soit sur la page complete */
     top: 0;
     left: 0;
     background-color: #242f3f;
