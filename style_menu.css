@@ -85,10 +85,11 @@
 
 #menu_contenu_titre #heart
 {
-    margin-left:25px;
-    padding-right: 20px;
+    padding-right: 2px;
     font-size: 25px; 
-    color:grey
+    color:grey;
+    position: relative;
+    right: -20px;
 }
 
 :root{
@@ -111,8 +112,8 @@
             -webkit-text-fill-color: transparent;
             transform: scale(0);
             transition: transform 150ms 50ms ease-in-out;
-             position: relative;
-             left: -37px;
+            position: relative;
+            left: -35px;
     }
     
      #heart .far.fa-heart:hover{
@@ -121,12 +122,14 @@
     
     #heart>.far.fa-heart:hover  .fas.fa-heart{
     transform: scale(1);
+
     }
 
-#heart
-{
-    margin-right:-30px;
-}
+    .heart i 
+    {
+        padding-top:10px;
+        font-size: 25px; 
+    }
     
 #menu_contenu_titre h2
 {
@@ -162,8 +165,13 @@
     overflow: hidden;
     margin-top:20px;
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     position: relative;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
 
 }
 
@@ -174,6 +182,8 @@
     display: flex;
     flex-direction: column;
     text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .menu_choix_contenu_text strong
@@ -193,36 +203,24 @@
     overflow: hidden;
 }
 
+
 .menu_choix_contenu_prix 
 {
-    padding-top: 40px;
     display: flex;
+    margin-right: 10px;
 }
 
 .menu_choix_contenu_text
 {
-    text-overflow: ellipsis; 
-    white-space: nowrap; 
-    overflow: hidden;
     padding-right: 80px;
+    
 }
 
-.menu_anim .menu_choix_contenu_text
+.menu_anim
 {
 display: flex;
-text-overflow: ellipsis; 
-white-space: nowrap; 
-overflow: hidden;
+align-items: center;
 
-}
-
-.menu_anim:hover
-{
-    padding-left: 30px;
-    margin-left:20px;
-    text-overflow: ellipsis; 
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 /* partie animation css */ 
@@ -231,30 +229,22 @@ overflow: hidden;
 .check_box
 {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    right:-5rem; /*position finale */
-    transition: all 1s ease;
-
-}
-
-.menu_choix_contenu:hover .check_box
-{
+    justify-content: center;
+    align-items: center;
+    /*right:-5rem; /*position finale */ 
     
-    right:0rem;
-
 }
 
-.menu_choix_contenu:hover
+.menu_choix_contenu:hover .check
 {
-    text-overflow: ellipsis;
+    width: 80px;
 }
+
+
 
 .check
 {
-    width: 80px;
+    width: 0px;
     height: 80px;
     background-color: aquamarine;
     display: flex;
@@ -265,8 +255,7 @@ overflow: hidden;
     border-bottom-left-radius: 0px;
     box-sizing: border-box;
     overflow: hidden;
-    padding-bottom:13px;
-
+    transition: all 1s ease;
 }
 
 .fa-check-circle
@@ -288,14 +277,14 @@ overflow: hidden;
 
 .menu_choix_contenu_prix
 {
-    position: absolute;
+   /* position: absolute;
     right: 40px;
-    transition: all 1s ease;
+    transition: all 1s ease; */
 }
 
 .menu_choix_contenu:hover .menu_choix_contenu_prix
 {
-    right:6rem;
+    /* right:6rem; */
 }
 
 #menu_choix_entree
