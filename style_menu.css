@@ -30,7 +30,6 @@
 }
 
 #header_icon a
-
 {
    position: relative;
    top:27px;
@@ -52,8 +51,6 @@
 #section_menu
 {
     background-color: #f6f6f6;
-
-
 }
 
 #menu
@@ -77,7 +74,7 @@
 
 #menu_contenu_titre
 {
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,7 +82,7 @@
 
 #menu_contenu_titre #heart
 {
-    padding-right: 2px;
+    padding-right: 0px;
     font-size: 25px; 
     color:grey;
     position: relative;
@@ -212,7 +209,7 @@
 
 .menu_choix_contenu_text
 {
-    padding-right: 80px;
+    padding-right: 10px;
     
 }
 
@@ -231,15 +228,12 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*right:-5rem; /*position finale */ 
-    
 }
 
 .menu_choix_contenu:hover .check
 {
     width: 80px;
 }
-
 
 
 .check
@@ -275,17 +269,6 @@ align-items: center;
     100% {transform: rotate(1turn);}
 }
 
-.menu_choix_contenu_prix
-{
-   /* position: absolute;
-    right: 40px;
-    transition: all 1s ease; */
-}
-
-.menu_choix_contenu:hover .menu_choix_contenu_prix
-{
-    /* right:6rem; */
-}
 
 #menu_choix_entree
 {
@@ -398,21 +381,23 @@ color: white;
 }
 
 
+
 @media (min-width: 768px) /*tablette*/ 
 {
-    #menu_choix {
+    #menu_choix
+    {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-.menu_choix_contenu{
+.menu_choix_contenu
+{
     display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    flex:10%;
-
 }
+
 #menu_choix_entree
     {
         flex:10%;
@@ -424,13 +409,174 @@ color: white;
 {
     flex:10%;
     flex-wrap: wrap;
-    padding-right: 30px;
 }
 
 #menu_choix_dessert
 {
     flex:10%;
     flex-wrap: wrap;
-    padding-right: 30px; 
+
+}
+.menu_choix_contenu
+{
+    background-color: white;
+    border-radius: 13px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left:10px;
+    margin-bottom: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top:20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.menu_choix_contenu_text
+{
+    flex:10%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu_choix_contenu_text strong
+{
+    padding-bottom: 6px;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu_choix_contenu_text span 
+{
+    font-size: 14px;
+    font-weight: lighter;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+
+.menu_choix_contenu_prix 
+{
+    display: flex;
+    margin-right: 10px;
+}
+
+.menu_choix_contenu_text
+{
+    padding-right: 10px;
+    
+}
+
+.menu_anim
+{
+display: flex;
+align-items: center;
+
+}
+
+
+}
+
+
+
+@media (min-width: 1024px) /*tablette*/ 
+
+{
+#menu_choix_plats
+{
+    flex:10%;
+    flex-wrap: wrap;
+    padding-right: 30px;
+
+}
+
+.menu_choix_contenu
+{
+    background-color: white;
+    border-radius: 13px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left:10px;
+    margin-bottom: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top:20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.menu_choix_contenu_text
+{
+    flex:10%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu_choix_contenu_text strong
+{
+    padding-bottom: 6px;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu_choix_contenu_text span 
+{
+    font-size: 14px;
+    font-weight: lighter;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+
+.menu_choix_contenu_prix 
+{
+    display: flex;
+    margin-right: 10px;
+}
+
+.menu_choix_contenu_text
+{
+    padding-right: 10px;
+    
+}
+
+.menu_anim
+{
+display: flex;
+align-items: center;
+
 }
 }
+
