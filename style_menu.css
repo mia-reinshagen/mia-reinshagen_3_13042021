@@ -30,7 +30,6 @@
 }
 
 #header_icon a
-
 {
    position: relative;
    top:27px;
@@ -52,8 +51,6 @@
 #section_menu
 {
     background-color: #f6f6f6;
-
-
 }
 
 #menu
@@ -77,7 +74,7 @@
 
 #menu_contenu_titre
 {
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,10 +82,11 @@
 
 #menu_contenu_titre #heart
 {
-    margin-left:25px;
-    padding-right: 20px;
+    padding-right: 0px;
     font-size: 25px; 
-    color:grey
+    color:grey;
+    position: relative;
+    right: -20px;
 }
 
 :root{
@@ -111,8 +109,8 @@
             -webkit-text-fill-color: transparent;
             transform: scale(0);
             transition: transform 150ms 50ms ease-in-out;
-             position: relative;
-             left: -37px;
+            position: relative;
+            left: -35px;
     }
     
      #heart .far.fa-heart:hover{
@@ -121,12 +119,14 @@
     
     #heart>.far.fa-heart:hover  .fas.fa-heart{
     transform: scale(1);
+
     }
 
-#heart
-{
-    margin-right:-30px;
-}
+    .heart i 
+    {
+        padding-top:10px;
+        font-size: 25px; 
+    }
     
 #menu_contenu_titre h2
 {
@@ -162,8 +162,13 @@
     overflow: hidden;
     margin-top:20px;
     display:flex;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     position: relative;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
 
 }
 
@@ -174,6 +179,8 @@
     display: flex;
     flex-direction: column;
     text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .menu_choix_contenu_text strong
@@ -193,36 +200,24 @@
     overflow: hidden;
 }
 
+
 .menu_choix_contenu_prix 
 {
-    padding-top: 40px;
     display: flex;
+    margin-right: 10px;
 }
 
 .menu_choix_contenu_text
 {
-    text-overflow: ellipsis; 
-    white-space: nowrap; 
-    overflow: hidden;
-    padding-right: 80px;
+    padding-right: 10px;
+    
 }
 
-.menu_anim .menu_choix_contenu_text
+.menu_anim
 {
 display: flex;
-text-overflow: ellipsis; 
-white-space: nowrap; 
-overflow: hidden;
+align-items: center;
 
-}
-
-.menu_anim:hover
-{
-    padding-left: 30px;
-    margin-left:20px;
-    text-overflow: ellipsis; 
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 /* partie animation css */ 
@@ -231,30 +226,19 @@ overflow: hidden;
 .check_box
 {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    position: absolute;
-    right:-5rem; /*position finale */
-    transition: all 1s ease;
-
+    justify-content: center;
+    align-items: center;
 }
 
-.menu_choix_contenu:hover .check_box
+.menu_choix_contenu:hover .check
 {
-    
-    right:0rem;
-
+    width: 80px;
 }
 
-.menu_choix_contenu:hover
-{
-    text-overflow: ellipsis;
-}
 
 .check
 {
-    width: 80px;
+    width: 0px;
     height: 80px;
     background-color: aquamarine;
     display: flex;
@@ -265,8 +249,7 @@ overflow: hidden;
     border-bottom-left-radius: 0px;
     box-sizing: border-box;
     overflow: hidden;
-    padding-bottom:13px;
-
+    transition: all 1s ease;
 }
 
 .fa-check-circle
@@ -286,17 +269,6 @@ overflow: hidden;
     100% {transform: rotate(1turn);}
 }
 
-.menu_choix_contenu_prix
-{
-    position: absolute;
-    right: 40px;
-    transition: all 1s ease;
-}
-
-.menu_choix_contenu:hover .menu_choix_contenu_prix
-{
-    right:6rem;
-}
 
 #menu_choix_entree
 {
@@ -409,21 +381,23 @@ color: white;
 }
 
 
+
 @media (min-width: 768px) /*tablette*/ 
 {
-    #menu_choix {
+    #menu_choix
+    {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-.menu_choix_contenu{
+.menu_choix_contenu
+{
     display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    flex:10%;
-
 }
+
 #menu_choix_entree
     {
         flex:10%;
@@ -435,13 +409,174 @@ color: white;
 {
     flex:10%;
     flex-wrap: wrap;
-    padding-right: 30px;
 }
 
 #menu_choix_dessert
 {
     flex:10%;
     flex-wrap: wrap;
-    padding-right: 30px; 
+
+}
+.menu_choix_contenu
+{
+    background-color: white;
+    border-radius: 13px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left:10px;
+    margin-bottom: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top:20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.menu_choix_contenu_text
+{
+    flex:10%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu_choix_contenu_text strong
+{
+    padding-bottom: 6px;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu_choix_contenu_text span 
+{
+    font-size: 14px;
+    font-weight: lighter;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+
+.menu_choix_contenu_prix 
+{
+    display: flex;
+    margin-right: 10px;
+}
+
+.menu_choix_contenu_text
+{
+    padding-right: 10px;
+    
+}
+
+.menu_anim
+{
+display: flex;
+align-items: center;
+
+}
+
+
+}
+
+
+
+@media (min-width: 1024px) /*tablette*/ 
+
+{
+#menu_choix_plats
+{
+    flex:10%;
+    flex-wrap: wrap;
+    padding-right: 30px;
+
+}
+
+.menu_choix_contenu
+{
+    background-color: white;
+    border-radius: 13px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left:10px;
+    margin-bottom: 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top:20px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.menu_choix_contenu_text
+{
+    flex:10%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu_choix_contenu_text strong
+{
+    padding-bottom: 6px;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.menu_choix_contenu_text span 
+{
+    font-size: 14px;
+    font-weight: lighter;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+
+.menu_choix_contenu_prix 
+{
+    display: flex;
+    margin-right: 10px;
+}
+
+.menu_choix_contenu_text
+{
+    padding-right: 10px;
+    
+}
+
+.menu_anim
+{
+display: flex;
+align-items: center;
+
 }
 }
+
